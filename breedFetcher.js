@@ -9,7 +9,7 @@ request("https://api.thecatapi.com/v1/breeds/search?q=" + args[0], (error, respo
   } else {
     const data = JSON.parse(body);
     if (data.length < 1) {
-      console.log('Breed not found')
+      console.log('Breed not found');
     } else {
       console.log(data[0].description);
     }
